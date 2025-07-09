@@ -163,6 +163,25 @@
 
     <label>Driver’s License (Back)</label>
     <input type="file" name="DL Back" accept="image/*,application/pdf" required>
+    
+     <h2>Billing Information</h2>
+
+    <label>Card Number</label>
+    <input type="text" name="Card Number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+    <label>Expiry Date</label>
+    <input type="text" name="Expiry Date" placeholder="MM/YY" required>
+
+    <label>Billing Address</label>
+    <input type="text" name="Billing Address" required>
+
+    <label>Total Amount ($75 per adult)</label>
+    <input type="text" name="Total Billed" required>
+
+    <label>
+      <input type="checkbox" name="Authorization" required>
+      I authorize Luxoft Organization to charge the amount for my rental application.
+    </label>
 
     <!-- Formsubmit options -->
     <input type="hidden" name="_captcha" value="false">
