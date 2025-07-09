@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rental Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .inline {
+      display: flex;
+      gap: 1rem;
+    }
+    .inline input {
+      flex: 1;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.75rem;
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rental Application Form</h1>
+
+  <form action="https://formsubmit.co/youremail@example.com" method="POST" enctype="multipart/form-data">
+    
+    <label>TODAY’S DATE</label>
+    <input type="date" name="Today's Date" required>
+
+    <label>ADDRESS APPLIED FOR</label>
+    <input type="text" name="Applied For" required>
+
+    <label>Email Address</label>
+    <input type="email" name="Email Address" required>
+
+    <h2>Applicant’s Information</h2>
+
+    <div class="inline">
+      <input type="text" name="Last Name" placeholder="Last Name" required>
+      <input type="text" name="First Name" placeholder="First Name" required>
+      <input type="text" name="MI" placeholder="MI">
+    </div>
+
+    <label>SSN (Social Security Number)</label>
+    <input type="text" name="SSN" required>
+
+    <label>Date of Birth</label>
+    <input type="date" name="Date of Birth" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="Phone Number" required>
+
+    <label>Previous Address</label>
+    <input type="text" name="Previous Address" placeholder="Street, City, State, ZIP">
+
+    <label>Landlord or Mortgage Co.</label>
+    <input type="text" name="Landlord or Mortgage Co.">
+
+    <label>Phone (Landlord)</label>
+    <input type="tel" name="Landlord Phone">
+
+    <label>Rent Amount</label>
+    <input type="text" name="Rent Amount">
+
+    <label>Reason for Leaving</label>
+    <textarea name="Reason for Leaving"></textarea>
+
+    <label>Single or Married</label>
+    <input type="text" name="Marital Status">
+
+    <label>Proposed Occupants & Ages</label>
+    <textarea name="Proposed Occupants and Ages" placeholder="1) ___  2) ___  3) ___ 4) ___ 5) ___"></textarea>
+
+    <label>Pet</label>
+    <input type="text" name="Pet">
+
+    <label>Vehicle Type</label>
+    <input type="text" name="Vehicle Type">
+
+    <label>Smoker?</label>
+    <select name="Smoker">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label>Earliest Possible Date of Deposit Payment</label>
+    <input type="date" name="Earliest Deposit Date">
+
+    <label>Amount Available to Secure Property</label>
+    <input type="text" name="Amount Available">
+
+    <label>Proposed Move-in Date</label>
+    <input type="date" name="Proposed Move-in Date">
+
+    <label>Method of Payment</label>
+    <input type="text" name="Method of Payment">
+
+    <h2>Employment Status</h2>
+
+    <label>Status</label>
+    <textarea name="Employment Status" placeholder="Full Time / Part Time / Unemployed / Student / Retired"></textarea>
+
+    <label>Employed By</label>
+    <input type="text" name="Employed By">
+
+    <label>How long have you worked there?</label>
+    <input type="text" name="Work Duration">
+
+    <label>Work Address</label>
+    <input type="text" name="Work Address">
+
+    <label>Work Phone#</label>
+    <input type="tel" name="Work Phone">
+
+    <label>Personal Reference</label>
+    <input type="text" name="Personal Reference">
+
+    <label>Reference Phone#</label>
+    <input type="tel" name="Reference Phone">
+
+    <h2>Upload Driver's License</h2>
+
+    <label>Driver’s License (Front)</label>
+    <input type="file" name="DL Front" accept="image/*,application/pdf" required>
+
+    <label>Driver’s License (Back)</label>
+    <input type="file" name="DL Back" accept="image/*,application/pdf" required>
+
+    <!-- Formsubmit options -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label>Date Signed</label>
+    <input type="date" name="Form Signed Date" required>
+
+    <label>Applicant Signature</label>
+    <input type="text" name="Applicant Signature" required>
+
+    <button type="submit">Submit Application</button>
+
+  </form>
+
+</body>
+</html>
